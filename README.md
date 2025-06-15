@@ -39,6 +39,34 @@ python pro_trading_bot.py
 O robô buscará os dados recentes, analisará os indicadores e enviará
 ordens de compra ou venda de acordo com as regras implementadas.
 
+## Passo a Passo para deixar o robô rodando
+
+1. Instale as dependências listadas na seção **Requisitos**. Caso prefira,
+   crie um ambiente virtual para isolar os pacotes:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install python-binance pandas ta
+   ```
+
+2. (Opcional) Defina suas próprias chaves de API via variáveis de ambiente
+   se não quiser utilizar as que acompanham o exemplo:
+
+   ```bash
+   export BINANCE_KEY="sua_chave"
+   export BINANCE_SECRET="seu_segredo"
+   ```
+
+3. Execute o script principal:
+
+   ```bash
+   python pro_trading_bot.py
+   ```
+
+4. O robô iniciará o loop principal e passará a analisar o mercado a cada
+   minuto, enviando ordens de compra ou venda conforme os sinais gerados.
+
 ## Aviso
 Este código é apenas um exemplo educacional. Negociar ativos digitais é
 arriscado e não há garantia de lucro. Utilize por sua conta e risco.
